@@ -57,7 +57,7 @@ function actual_enable {
 
     hook_without_extensions="$(basename $1 | cut -d "." -f1)"
 
-    ln -s -f ../../"$hook" "$GIT_HOOK_DIR/$hook_without_extensions"
+    ln -s -f "$hook" "$GIT_HOOK_DIR/$hook_without_extensions"
     # Note: "../.." is necessary because git hooks spawn in $GIT_HOOK_DIR
     echo -e "\t$b$hook_without_extensions$u hook ${g}enabled${d}"
 }
