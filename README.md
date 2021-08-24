@@ -4,6 +4,10 @@
 
 - simple setup, maintenance and handling of git-hooks across teams and projects
 - common git-hook tasks as declarative configuration inside your git repository _(optional)_
+- Works on Linux and Windows
+
+### Common pitfalls
+- Make sure to make your .githooks/ scripts executable
 
 ### Why?
 
