@@ -2,8 +2,8 @@
 
 ### tl;dr: 
 
-- simple setup, maintenance and handling of git-hooks across teams and projects
-- common git-hook tasks as declarative configuration inside your git repository _(optional)_
+- Simple setup, maintenance and handling of git-hooks across teams and projects
+- Common git-hook tasks as declarative configuration inside your git repository _(optional)_
 - Works on Linux and Windows
 
 ### Common pitfalls
