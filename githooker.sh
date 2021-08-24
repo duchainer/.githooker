@@ -97,7 +97,7 @@ function interactive {
     echo -e "\n${b}[INFO]${u} each ${b}hook$u will be listed with its ${b}status$u. Say yes or no to change hook state. (y/${b}N$u)"
 
     for hook in "$BASE/$hook_dir/"*; do
-        hook_without_extension="$(cut -d '.' -f1 "$hook")"
+        hook_without_extension="$(basename $hook | cut -d "." -f1)"
 
         if [ -f "$BASE/$GIT_HOOK_DIR/$hook_without_extension" ]; then
             echo -e "\n\t${g}${b}$hook_without_extension${u} hook is enabled${d}. Do you want to ${b}disable${u} it? (y/N)"
