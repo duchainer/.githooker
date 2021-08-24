@@ -23,7 +23,9 @@ _***Note***: This shall not stop anyone from using the general idea of `generic_
 
 ### How odes it work?
 
-**.githooker** is added as a [git submodule](https://git-scm.com/docs/git-submodule) to your repository. Then a `.githooks/` directory is manually created, which holds arbitrary [git-hooks](https://git-scm.com/docs/githooks) and/or mentioned _git-hook declarations_. Furthermore, .githooker handles symbolic linking from hooks in `.git/hooks/pre-commit` to `.githooks/pre-commit.sh`.
+**.githooker** is added as a [git submodule](https://git-scm.com/docs/git-submodule) to your repository.
+Then a `.githooks/` directory is manually created, which holds arbitrary [git-hooks](https://git-scm.com/docs/githooks) and/or mentioned _git-hook declarations_.
+Furthermore, .githooker handles symbolic linking from hooks in `.git/hooks/pre-commit` to `.githooks/pre-commit`.
 
 To use **_declarative configuration_** one needs to source `.githooker/generic_hooks.sh` in each hook script. Then following two commands are available:
 
