@@ -62,7 +62,7 @@ The difference between run_command_{once,for_each_file} is that *_once runs only
 #### 1st) initial setup 
 
 ```bash
-git submodule add https://github.com/boddenberg-it/.githooker .githooker
+git submodule add https://github.com/duchainer/.githooker .githooker
 ```
 
 Create an actual pre-commit hook script in `.githooks/pre-commit.sh` with the content you want to run, e.g.:
